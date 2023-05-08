@@ -604,7 +604,7 @@ public class GameSystem {
 											// developing areas loop
 											for (Square square : player.getOwnedSquares()) {
 												try {
-													if (square.getName().equalsIgnoreCase(inputArea)) {
+													if (square.getName().equalsIgnoreCase(inputArea) && ((Area) square).getGroup().equals(group)) {
 
 														Area area;
 														try {
